@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Music Web App</title>
+		<link rel="icon" type="image/png" href="resources/images/favicon1.png">
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="js/music.js"></script>
+	</head>
+	<body onload="initialize();">
+		<div align = "center">
+			<div id = "container" style="font-family:calibri; width:1024px">
+				<center><h2>My Music Web Application</h2></center>
+				<br/>
+				
+				<!-- Form Begins -->
+				<form>
+				   <strong>Artist Search: </strong><br/>
+				   <label><input type="text" placeholder=" Enter Artist name" id="form-input"/></label>
+				   <br/><br/>
+				   <input type="button" onclick="sendRequest();" value="Display Info"/> &nbsp&nbsp
+				   <button type= "refresh"> Reset</button>
+				</form>
+				<!-- Form Ends -->
+				
+				<br/>
+				<br/>
+				
+				<div id = "menu" style="width:300px; height:700px; text-align:justify; border: 3px solid black; float:left; overflow:auto">
+					<center><strong>Artist Information and Biography:</strong></center>
+					<div id="output1"></div>
+				</div>
+		
+		
+				<div id = "content" style = "width:200px; height:700px; float:left; border: 3px solid black; text-align:left; overflow:auto">
+					<center><strong>Top 10 Albums:</strong></center>
+					<div id="output2"></div>
+				</div> 
+		
+								
+				<div id = "footer" style="width:500px; border: 3px solid black;float:left; height: 700px; text-align:left; overflow:auto">
+					<center><strong>Upcoming 10 Events:</strong></center>
+					<div id="output3">&nbsp;</div>
+				</div>
+		
+			</div>
+		</div>
+  </body>
+</html>

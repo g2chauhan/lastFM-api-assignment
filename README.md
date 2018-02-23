@@ -1,4 +1,4 @@
-# lastFM-api-assignment
+# music-info-lastFM
 
 ## Project Overview
 
